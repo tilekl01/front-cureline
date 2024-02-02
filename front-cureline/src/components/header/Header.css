@@ -1,0 +1,69 @@
+/* Добавьте стили ваших компонентов здесь */
+.mobile-nav {
+    display: none; /* Мобильное меню изначально скрыто */
+  }
+  
+  .menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px; /* Добавим небольшой отступ от правого края */
+    margin-left: auto;
+    margin-top: 20px;
+    span {
+        display: block;
+        height: 3px;
+        width: 30px;
+        background: #333;
+        margin-bottom: 5px; /* Добавим отступ между линиями */
+        transition: transform 0.3s, opacity 0.3s;
+    }
+  }
+  
+  .mobile-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    &.open {
+      display: block;
+    }
+    nav {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          padding: 15px;
+          border-bottom: 1px solid #eee;
+          a {
+            text-decoration: none;
+            color: #333;
+            &:hover {
+              color: #007bff;
+            }
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  
+  /* Добавьте медиа-запросы для мобильных устройств */
+  @media screen and (max-width: 768px) {
+    .mobile-nav {
+      display: block; /* Показываем мобильное меню при уменьшении экрана */
+    }
+    .main-menu {
+      display: none; /* Скрываем основное меню на мобильных устройствах */
+    }
+  }
+  
