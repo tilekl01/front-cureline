@@ -1,18 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/Header';
-// import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer';
+import styled from "styled-components";
+import { HOME, SING_IN } from "./utils/Consts";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AccountBox from "../src/register/accountBox/index"
 import Slider from './components/slider/Slider';
-import Schedule from './components/schedule/Schedule';
-
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 20px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Slider/>
-      <Schedule/>
-      {/* <Footer/> */}
+
+
+
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path={SING_IN} element={
+            <AppContainer>
+              <AccountBox />
+            </AppContainer>
+          } />
+          <Route path={HOME} element={<Slider />} />
+        </Routes>
+      </BrowserRouter>
+
+      <Footer />
     </div>
   );
 }

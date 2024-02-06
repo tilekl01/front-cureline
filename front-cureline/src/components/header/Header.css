@@ -20,9 +20,15 @@
         background: #333;
         margin-bottom: 5px; /* Добавим отступ между линиями */
         transition: transform 0.3s, opacity 0.3s;
+        
     }
   }
-  
+  .login{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+  }
   .mobile-menu {
     position: absolute;
     top: 80px;

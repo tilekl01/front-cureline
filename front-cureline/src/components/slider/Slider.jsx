@@ -1,4 +1,5 @@
 import React from 'react'
+import Schedule from '../schedule/Schedule';
 
 const Slider = () => {
     return (
@@ -23,6 +24,8 @@ const Slider = () => {
                     </div>
                 </div>
             </section>
+            <Schedule/>
+            
         </div>
     )
 }

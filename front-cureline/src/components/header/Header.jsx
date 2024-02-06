@@ -4,6 +4,7 @@ import "../../App.css";
 import '../../bootstrap.min.css';
 import '../../animate.min.css';
 import '../../responsive.css';
+import Schedule from "../schedule/Schedule";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
                         <div class="row">
                             <div class="col-lg-6 col-md-5 col-12">
                                 <ul class="top-link">
-                                    <li><a href="#">О Нас</a></li>
+                                    <li><a href="/">О Нас</a></li>
                                     <li><a href="#">Доктары</a></li>
                                     <li><a href="#">Контакт</a></li>
                                     <li><a href="#">FAQ</a></li>
@@ -90,6 +91,12 @@ const Header = () => {
                                         </nav>
                                     </div>
                                 </div>
+                                <div className="col-lg-2 col-12 login" >
+                                    <div className="registration-icon">
+                                        <i className="fa fa-user"></i>
+                                        <a href="/singin">Войти</a> 
+                                </div>
+                            </div>
                                 {/* <div class="col-lg-2 col-12">
                                     <div class="get-quote">
                                         <a href="appointment.html" class="btn">Book Appointment</a>

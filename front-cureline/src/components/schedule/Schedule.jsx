@@ -3,11 +3,14 @@ import "./Schedule.css";
 import "../../App.css";
 import '../../bootstrap.min.css';
 import '../../animate.min.css';
+import AboutUs from "../aboutus/AboutUs";
+import Scan from "../../pages/scan/Scan";
 
 const Schedule = () => {
 
     return (
         <div>
+            
             <section class="schedule">
                 <div class="container">
                     <div class="schedule-inner">
@@ -19,8 +22,8 @@ const Schedule = () => {
                                             <i class="fa fa-ambulance"></i>
                                         </div>
                                         <div class="single-content">
-                                            <h4>БЕРЕМЕННОСТЬ И ПЛАНИРОВАНИЕ РЕБЕНКА</h4>
-                                            <p>Неинвазивные пренатальные тесты — НИПТ</p>
+                                            <h4>Сотрудничество с Партнерами</h4>
+                                            <p>Мы гордимся партнерством с DOC University Clinic, что позволяет нам обмениваться опытом, ресурсами и знаниями для общей цели - улучшения медицинской практики и научных исследований.</p>
                                             <a href="#">Читать ещё<i class="fa fa-long-arrow-right"></i></a>
                                         </div>
                                     </div>
@@ -33,8 +36,8 @@ const Schedule = () => {
                                             <i class="icofont-prescription"></i>
                                         </div>
                                         <div class="single-content">
-                                            <h4>БЕРЕМЕННОСТЬ И ПЛАНИРОВАНИЕ РЕБЕНКА</h4>
-                                            <p>Неинвазивные пренатальные тесты — НИПТ</p>
+                                            <h4>DocLab Pathological Laboratory</h4>
+                                            <p>также является партнером DOC University Clinic, что обеспечивает нам доступ к многолетнему опыту и экспертизе высококвалифицированных специалистов в области медицины.</p>
                                             <a href="#">Читать ещё<i class="fa fa-long-arrow-right"></i></a>
                                         </div>
                                     </div>
@@ -63,6 +66,7 @@ const Schedule = () => {
                     </div>
                 </div>
             </section>
+            <Scan/>
         </div>
     )
 };
