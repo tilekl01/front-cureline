@@ -3,7 +3,6 @@ import "./Schedule.css";
 import "../../App.css";
 import '../../bootstrap.min.css';
 import '../../animate.min.css';
-import AboutUs from "../aboutus/AboutUs";
 import Scan from "../../pages/scan/Scan";
 
 const Schedule = () => {
@@ -67,6 +66,7 @@ const Schedule = () => {
                 </div>
             </section>
             <Scan/>
+      
         </div>
     )
 };

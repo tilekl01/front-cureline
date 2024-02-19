@@ -4,7 +4,7 @@ import "../../App.css";
 import '../../bootstrap.min.css';
 import '../../animate.min.css';
 import '../../responsive.css';
-import Schedule from "../schedule/Schedule";
+
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -26,6 +26,7 @@ const Header = () => {
                                     <li><a href="#">FAQ</a></li>
                                 </ul>
                             </div>
+                            
                             <div class="col-lg-6 col-md-7 col-12">
                                 <ul class="top-contact">
                                     <li><i class="fa fa-phone"></i>+999 999999999</li>

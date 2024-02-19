@@ -1,0 +1,69 @@
+.info-doctar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .profile-card {
+    width: 80%;
+    max-width: 600px; /* Adjusted for a more compact look */
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners for a modern look */
+    overflow: hidden;
+  }
+  
+  .profile-header {
+    background-color: #007bff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .profile-name {
+    font-size: 20px; /* Adjusted for better readability */
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .profile-badge {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-body {
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #eef2f7; /* Light background for the body */
+  }
+  
+  .name-details p {
+    margin-bottom: 10px;
+    font-size: 16px; /* Slightly larger font for readability */
+  }
+  
+  .profile-footer {
+    padding: 15px 20px;
+    background-color: #d1e3f8; /* Slightly different background for footer */
+    font-size: 16px;
+  }
+  
+  .highlight {
+    background-color: #ffff99;
+  }
+  
+  /* Media query for responsive adjustments */
+  @media (max-width: 768px) {
+    .profile-card {
+      width: 95%;
+      max-width: none;
+    }
+  }
+  
