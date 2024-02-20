@@ -2,6 +2,7 @@ import React from 'react'
 import './Scan.scss'
 import Schedule from '../../components/schedule/Schedule'
 import Doctars from '../../components/doctars/Doctars'
+import Contact from '../contact/Contact'
 
 
 
@@ -33,6 +34,7 @@ const Scan = () => {
         </div>
       </div>
       <Doctars/>
+      <Contact/>
     </div>
   )
 }

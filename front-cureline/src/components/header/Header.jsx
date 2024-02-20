@@ -21,7 +21,7 @@ const Header = () => {
                             <div class="col-lg-6 col-md-5 col-12">
                                 <ul class="top-link">
                                     <li><a href="/">О Нас</a></li>
-                                    <li><a href="#">Доктары</a></li>
+                                    <li><a href="/doctar">Докторы</a></li>
                                     <li><a href="#">Контакт</a></li>
                                     <li><a href="#">FAQ</a></li>
                                 </ul>
@@ -60,8 +60,8 @@ const Header = () => {
                                         <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
                                             <nav>
                                                 <ul>
-                                                    <li><a href="#">Главная</a></li>
-                                                    <li><a href="#">Доктары</a></li>
+                                                    <li><a href="/">Главная</a></li>
+                                                    <li><a href="/doctar">Докторы</a></li>
                                                     <li><a href="#">Услуги</a></li>
                                                     <li><a href="#">О нас</a></li>
                                                     <li><a href="#">Контакт</a></li>
@@ -75,12 +75,12 @@ const Header = () => {
                                     <div class="main-menu">
                                         <nav class="navigation">
                                             <ul class="nav menu">
-                                                <li class="active"><a href="#">Главная<i class="icofont-rounded-down"></i></a>
+                                                <li class="active"><a href="/">Главная<i class="icofont-rounded-down"></i></a>
                                                     <ul class="dropdown">
-                                                        <li><a href="index.html">Доктары</a></li>
+                                                        <li><a href="/doctar">Докторы</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Доктары </a></li>
+                                                <li><a href="/doctar">Докторы </a></li>
                                                 <li><a href="#">Услуги </a></li>
                                                 <li><a href="#">О нас <i class="icofont-rounded-down"></i></a>
                                                     <ul class="dropdown">
