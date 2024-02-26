@@ -38,7 +38,7 @@
     margin: 10px 0;
   }
 
-  .button {
+  .button_doc {
     background-color: #007bff;
     color: white;
     border: none;
@@ -53,7 +53,7 @@
     width: 100%;
   }
 
-  .button:hover {
+  .button_doc:hover {
     background-color: #0771e3;
   }
 
