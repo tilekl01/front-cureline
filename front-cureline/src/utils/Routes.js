@@ -1,8 +1,10 @@
 import Doctars from "../components/doctars/Doctars";
 import Slider from "../components/slider/Slider";
+import AdminPanel from "../pages/adminpanel/AdminPanel";
+import AppointmentForm from "../pages/appointment/Appointment";
 import Contact from "../pages/contact/Contact";
 import AccountBox from "../register/accountBox";
-import { SING_IN, DOCTAR, CONTACT } from "./Consts";
+import { SING_IN, DOCTAR, CONTACT, APPOINTMENT } from "./Consts";
 
 export const publicRoutes = [
     {
@@ -21,5 +23,14 @@ export const publicRoutes = [
     {
         path: CONTACT,
         element: <Contact/>
+    },
+    {
+        path: APPOINTMENT,
+        element: <AppointmentForm/>
+    },
+    {
+        path: ADMIN,
+        element: <AdminPanel/>
+
     }
 ]

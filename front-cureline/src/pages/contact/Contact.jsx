@@ -12,7 +12,7 @@ const Contact = () => {
 					<div class="row"> 
 						<div class="col-lg-6">
 							<div class="contact-us-left">
-							<iframe className='contact-iframe' src="https://yandex.ru/maps/10309/bishkek/house/Y00YcAdgSUIFQFpofXR1dX1hbQ==/?from=mapframe&ll=74.600071%2C42.844129&z=17" width="100%" height="100%"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.3589085554954!2d74.59866269357235!3d42.84415421954023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb75b0941713d%3A0xe25c88f74c059a30!2sSalymbekov%20Business%20School!5e0!3m2!1sru!2skg!4v1708922877929!5m2!1sru!2skg" width="550" height="550" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
 						<div class="col-lg-6">
