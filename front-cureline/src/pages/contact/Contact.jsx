@@ -1,12 +1,10 @@
 import React from 'react'
 import '../contact/Contact.css'
-import ImageSlider from '../../components/sliderimage/SliderImage'
 
 
 const Contact = () => {
   return (
     <div>
-		<ImageSlider/>
 		<h1 className='contact'>Контакты</h1>
         <section class="contact-us section" >
 			<div class="container">

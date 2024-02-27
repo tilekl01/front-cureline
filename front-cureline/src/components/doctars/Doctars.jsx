@@ -1,6 +1,8 @@
 import React from 'react'
 import '../doctars/Doctars.css'
-import InfoDoctar from '../info_doctar/InfoDoctar'
+import Licence from '../licence/Licence'
+// import FaqSimple from '../faq/Faq'
+// import { MantineProvider } from '@mantine/core';
 const Doctars = () => {
   return (
     <div> 
@@ -74,6 +76,10 @@ const Doctars = () => {
     <img src="https://olc.kg/wp-content/uploads/2023/07/zholdoshev_500px.png" alt="Doctor"/>
   </div>
 </div>
+{/* <MantineProvider>
+  <FaqSimple/>
+</MantineProvider> */}
+
 </div>
   )
 }

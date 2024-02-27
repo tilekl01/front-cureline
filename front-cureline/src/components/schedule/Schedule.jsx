@@ -65,7 +65,7 @@ const Schedule = () => {
                     </div>
                 </div>
             </section>
-            <Scan/>
+            
       
         </div>
     )

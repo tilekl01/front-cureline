@@ -1,16 +1,14 @@
 import React from 'react'
 import './Scan.scss'
-import Schedule from '../../components/schedule/Schedule'
-import Doctars from '../../components/doctars/Doctars'
-import Contact from '../contact/Contact'
+
 
 
 
 const Scan = () => {
   return (
     <div>
-     
-      <div style={{ margin: "18px 50px", padding: "60px 0", display: 'flex', justifyContent: "center" }}>
+     <h1  className="mb-5" style={{textAlign: 'center'}}>Сканер</h1>
+      <div style={{ margin: "18px 50px", display: 'flex', justifyContent: "center" }}>
         <div class="card" >
           <div class="image-data">
             <div class="background-image"></div>
@@ -33,8 +31,7 @@ const Scan = () => {
           </div>
         </div>
       </div>
-      <Doctars/>
-      <Contact/>
+
     </div>
   )
 }

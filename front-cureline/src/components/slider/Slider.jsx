@@ -1,5 +1,9 @@
 import React from 'react'
 import Schedule from '../schedule/Schedule';
+import Scan from '../../pages/scan/Scan';
+import Doctars from '../doctars/Doctars';
+import Contact from '../../pages/contact/Contact';
+import Licence from '../licence/Licence';
 
 const Slider = () => {
     return (
@@ -25,7 +29,10 @@ const Slider = () => {
                 </div>
             </section>
             <Schedule/>
-            
+            <Scan/>
+            <Doctars/>
+            <Licence/>
+      <Contact/>
         </div>
     )
 }

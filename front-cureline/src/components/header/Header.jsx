@@ -89,10 +89,13 @@ const Header = () => {
                                                 <li><a href="#">Услуги </a></li>
                                                 <li><a href="/">О нас <i class="icofont-rounded-down"></i></a>
                                                     <ul class="dropdown">
-                                                        <li><a href="blog-single.html">Услуги</a></li>
+                                                        <li><a href="/scan">Сканер</a></li>
+                                                        <li><a href="/licence">Лицензия</a></li>
+                                                        <li><a href="/doctar">Докторы</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="contact.html">Контакт</a></li>
+                                                <li><a href="/album">Галерея</a></li>
+                                                <li><a href="/contact">Контакт</a></li>
                                             </ul>
                                         </nav>
                                     </div>
