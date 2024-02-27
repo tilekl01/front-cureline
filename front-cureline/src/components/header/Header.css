@@ -29,6 +29,10 @@
     align-items: center;
 
   }
+  .logo a img {
+    height: 60px; /* Adjust logo size */
+    width: auto;
+  }
   .mobile-menu {
     position: absolute;
     top: 80px;

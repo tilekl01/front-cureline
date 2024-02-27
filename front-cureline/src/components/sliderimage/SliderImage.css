@@ -1,0 +1,62 @@
+.main {
+    text-align: center;
+    margin-top: 30px;
+    background: #f2f2f2; /* Light grey background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the main container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .flex_row {
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap; /* Wrap thumbnails if they don't fit in one line */
+  }
+  
+  .thumbnail {
+    margin: 10px; /* Uniform spacing around thumbnails */
+    transition: transform 0.3s ease; /* Smooth scaling animation */
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1); /* Slightly enlarge thumbnail on hover */
+  }
+  
+  .clicked {
+    border: 5px solid #4CAF50; /* Green border for selected thumbnail */
+    transform: scale(1.1); /* Also enlarge the selected thumbnail */
+  }
+  
+  .btns {
+    height: 40px;
+    width: 40px;
+    border: none; /* No border for a modern look */
+    border-radius: 20px; /* Fully rounded corners for circle buttons */
+    background: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    font-size: 18px; /* Larger font size for readability */
+    margin: 0 10px; /* Spacing between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .btns:hover {
+    background: #367C39; /* Darker green background on hover */
+  }
+  
+  .btns:focus {
+    outline: none; /* Remove the outline to maintain the style on focus */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 600px) {
+    .flex_row {
+      flex-direction: column; /* Stack thumbnails vertically on small screens */
+    }
+  
+    .thumbnail {
+      margin: 10px auto; /* Center thumbnails with automatic horizontal margin */
+    }
+  }
+  

@@ -4,7 +4,7 @@ import "../../App.css";
 import '../../bootstrap.min.css';
 import '../../animate.min.css';
 import '../../responsive.css';
-
+import LOGO from '../../logo.png'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
                                 <ul class="top-link">
                                     <li><a href="/">О Нас</a></li>
                                     <li><a href="/doctar">Докторы</a></li>
-                                    <li><a href="#">Контакт</a></li>
+                                    <li><a href="/contact">Контакт</a></li>
                                     <li><a href="#">FAQ</a></li>
                                 </ul>
                             </div>
@@ -43,7 +43,7 @@ const Header = () => {
                             <div class="row">
                                 <div class="col-lg-3 col-md-3 col-12" >
                                     <div class="logo">
-                                        <a href="index.html"><img src="assets/img/logo.png" alt="#" /></a>
+                                        <a href="/"><img src={LOGO} alt="#"  /></a>
                                     </div>
                                     <div className="mobile-nav">
                                         <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -63,9 +63,14 @@ const Header = () => {
                                                     <li><a href="/">Главная</a></li>
                                                     <li><a href="/doctar">Докторы</a></li>
                                                     <li><a href="#">Услуги</a></li>
-                                                    <li><a href="#">О нас</a></li>
-                                                    <li><a href="#">Контакт</a></li>
-                                                    <li><a href="appointment.html" className="btn">Личный кабинет</a></li>
+                                                    <li><a href="/">О нас</a></li>
+                                                    <li><a href="/contact">Контакт</a></li>
+                                                    <div className="col-lg-2 col-12 login" >
+                                    <div className="registration-icon">
+                                        <i className="fa fa-user"></i>
+                                        <a href="/singin">Войти</a> 
+                                </div>
+                                </div>
                                                 </ul>
                                             </nav>
                                         </div>
@@ -82,7 +87,7 @@ const Header = () => {
                                                 </li>
                                                 <li><a href="/doctar">Докторы </a></li>
                                                 <li><a href="#">Услуги </a></li>
-                                                <li><a href="#">О нас <i class="icofont-rounded-down"></i></a>
+                                                <li><a href="/">О нас <i class="icofont-rounded-down"></i></a>
                                                     <ul class="dropdown">
                                                         <li><a href="blog-single.html">Услуги</a></li>
                                                     </ul>
