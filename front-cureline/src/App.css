@@ -38,7 +38,7 @@ font-weight: 600;
 color: #1A76D1;
 font-size: 15px;
 }
-.pro-features .button{}
+
 .pro-features .button .btn {
 width: 100%;
 text-align: center;
@@ -656,6 +656,7 @@ transform: translateY(-50%);
 z-index:9;
 }
 .schedule .single-schedule {
+  height: 100%;
 position: relative;
 text-align: left;
 z-index:3;
@@ -2750,10 +2751,7 @@ font-weight:400;
 color:#fff;
 background: #1A76D1;
 }
-.appointment .appointment-image{}
-.appointment.single-page .button .btn{
-width:100%;
-}
+
 .appointment .button .btn{
 font-weight:500;
 }
