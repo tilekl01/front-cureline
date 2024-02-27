@@ -30,7 +30,7 @@ function ImageSlider() {
   return (
     <div className="main">
       <button className='btns' onClick={handlePrevious}>P</button>
-      <img src={wordData.value} height="1000" width="1500" /> 
+      <img src={wordData.value} style={{ width: '60%', height: 'auto' }} />
       <button className='btns' onClick={handleNext}>N</button>
       <div className='flex_row'>
         {imgs.map((data,i)=>

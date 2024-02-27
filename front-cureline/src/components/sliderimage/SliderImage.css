@@ -1,10 +1,58 @@
 .main {
     text-align: center;
     margin-top: 30px;
-    background: #f2f2f2; /* Light grey background */
     padding: 20px;
     border-radius: 10px; /* Rounded corners for the main container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+
+  
+  .flex_row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Wrap thumbnails on smaller screens */
+    gap: 10px; /* Add space between thumbnails */
+  }
+  
+  .thumbnail img {
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Make width responsive */
+    cursor: pointer; /* To indicate clickable items */
+  }
+  
+  .clicked {
+    border: 5px solid black;
+  }
+  
+  .btns {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background: grey;
+    cursor: pointer; /* To indicate clickable items */
+  }
+  
+  /* Media query for tablets */
+  @media (max-width: 768px) {
+    .main img {
+      width: 100%; /* Full width on smaller screens */
+      height: auto; /* Adjust height automatically */
+    }
+  
+    .thumbnail img {
+      width: 90px; /* Slightly smaller thumbnails */
+    }
+  }
+  
+  /* Media query for mobile phones */
+  @media (max-width: 480px) {
+    .btns {
+      height: 35px;
+      width: 35px; /* Smaller buttons on mobile */
+    }
+  
+    .thumbnail img {
+      width: 80px; /* Even smaller thumbnails */
+    }
   }
   
   .flex_row {
