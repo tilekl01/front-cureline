@@ -5,13 +5,20 @@ import '../../bootstrap.min.css';
 import '../../animate.min.css';
 import '../../responsive.css';
 import LOGO from '../../logo.png'
-
+import i18n from "../../i18n";
+import { useTranslation } from "react-i18next";
+import useLocalStorage from "../../hooks/use-localstorage";
+import MenuItem from '@mui/material/MenuItem';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
+    const handleChangeLanguage = (language, e) => {
+        i18n.changeLanguage(language)
+        }
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+    const [language, setLanguage] = useLocalStorage('language', 'ru')
+    const {t} = useTranslation()
     return (
         <div>
             <header class="header" >
@@ -80,9 +87,9 @@ const Header = () => {
                                     <div class="main-menu">
                                         <nav class="navigation">
                                             <ul class="nav menu">
-                                                <li class="active"><a href="/">Главная<i class="icofont-rounded-down"></i></a>
+                                                <li ><a href="/">Главная<i class="icofont-rounded-down"></i></a>
                                                     <ul class="dropdown">
-                                                        <li><a href="/doctar">Докторы</a></li>
+                                                        <li><a href="/doctar">Вакансии</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="/doctar">Докторы </a></li>
@@ -106,11 +113,9 @@ const Header = () => {
                                         <a href="/singin">Войти</a> 
                                 </div>
                             </div>
-                                {/* <div class="col-lg-2 col-12">
-                                    <div class="get-quote">
-                                        <a href="appointment.html" class="btn">Book Appointment</a>
-                                    </div>
-                                </div> */}
+                            <MenuItem sx={{border: "2px solid #fff", borderRadius: "5px", margin: "3px", color: "#111"}} className="lng" onClick={() => handleChangeLanguage('en', setLanguage('en'))} value={'en'}><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/640px-Flag_of_the_United_Kingdom.svg.png" className="imgLng" alt="" /> EN</MenuItem>
+                            <MenuItem sx={{border: "2px solid #fff", borderRadius: "5px", margin: "3px", color: "#111"}} className="lng" onClick={() => handleChangeLanguage('ru', setLanguage('ru'))} value={'ru'}><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/640px-Flag_of_Russia.svg.png"  className="imgLng" alt="" /> RU</MenuItem>
+                            <MenuItem sx={{border: "2px solid #fff", borderRadius: "5px", margin: "3px", color: "#111"}} className="lng" onClick={() => handleChangeLanguage('kgz', setLanguage('kgz'))} value={'kgz'}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/1200px-Flag_of_Kyrgyzstan.svg.png" className="imgLng" alt="" /> KGZ</MenuItem>
                             </div>
                         </div>
                     </div>

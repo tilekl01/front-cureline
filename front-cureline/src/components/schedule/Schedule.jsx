@@ -23,7 +23,6 @@ const Schedule = () => {
                                         <div class="single-content">
                                             <h4>Сотрудничество с Партнерами</h4>
                                             <p>Мы гордимся партнерством с DOC University Clinic, что позволяет нам обмениваться опытом, ресурсами и знаниями для общей цели - улучшения медицинской практики и научных исследований.</p>
-                                            <a href="#">Читать ещё<i class="fa fa-long-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -37,7 +36,6 @@ const Schedule = () => {
                                         <div class="single-content">
                                             <h4>DocLab Pathological Laboratory</h4>
                                             <p>также является партнером DOC University Clinic, что обеспечивает нам доступ к многолетнему опыту и экспертизе высококвалифицированных специалистов в области медицины.</p>
-                                            <a href="#">Читать ещё<i class="fa fa-long-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -56,7 +54,6 @@ const Schedule = () => {
                                                 <li class="day">Понедельник - четверг
                                                     <span>9.00-15.00</span></li>
                                             </ul>
-                                            <a href="#">Читать ещё<i class="fa fa-long-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>

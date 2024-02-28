@@ -1,69 +1,75 @@
-.info-doctar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-  }
-  
-  .profile-card {
-    width: 80%;
-    max-width: 600px; /* Adjusted for a more compact look */
-    margin: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* Rounded corners for a modern look */
-    overflow: hidden;
-  }
-  
-  .profile-header {
-    background-color: #007bff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-  }
-  
-  .profile-name {
-    font-size: 20px; /* Adjusted for better readability */
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .profile-badge {
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .profile-body {
-    padding: 20px;
-    line-height: 1.6;
-    background-color: #eef2f7; /* Light background for the body */
-  }
-  
-  .name-details p {
-    margin-bottom: 10px;
-    font-size: 16px; /* Slightly larger font for readability */
-  }
-  
-  .profile-footer {
-    padding: 15px 20px;
-    background-color: #d1e3f8; /* Slightly different background for footer */
-    font-size: 16px;
-  }
-  
-  .highlight {
-    background-color: #ffff99;
-  }
-  
-  /* Media query for responsive adjustments */
-  @media (max-width: 768px) {
-    .profile-card {
-      width: 95%;
-      max-width: none;
-    }
-  }
-  
+.doctor-profile-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1100px; /* Adjust the max-width to fit the content size */
+  margin: 2% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.doctor-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-grow: 2;
+  margin-right: 20px;
+}
+
+.doctor-name {
+  font-size: 36px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.doctor-title {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.doctor-photo {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Adjust the size as needed */
+  margin-left: 20px;
+}
+
+.doctor-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.doctor-social-media {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f0f0f0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-social-media a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #007bff;
+}
+
+/* Additional Information Section */
+.additional-info {
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 20px; /* Spacing between profile card and additional info */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}

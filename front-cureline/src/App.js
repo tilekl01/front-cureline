@@ -6,13 +6,15 @@ import { HOME, SING_IN, DOCTAR, CONTACT, APPOINTMENT, ADMIN, ALBUM } from "./uti
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AccountBox from "../src/register/accountBox/index"
 import Slider from './components/slider/Slider';
-import InfoDoctar from './components/info_doctar/InfoDoctar';
+// import InfoDoctar from './components/info_doctar/InfoDoctar';
 import Doctars from './components/doctars/Doctars';
 import Contact from './pages/contact/Contact';
 import AppointmentForm from './pages/appointment/Appointment';
 import AdminPanel from './pages/adminpanel/AdminPanel';
 import Scan from './pages/scan/Scan';
 import Licence from './components/licence/Licence';
+import ImageGallery from './components/sliderimage/SliderImage';
+import DoctorDetailPage from './components/info_doctar/InfoDoctar';
 // import { MainComponent } from './components/sliderimage/SliderImage';
 
 const AppContainer = styled.div`
@@ -39,8 +41,8 @@ function App() {
         <Routes>
           <Route path={CONTACT} element={<Contact/>}/>
           <Route path={DOCTAR} element={<Doctars/>}/>
-          <Route path='/infodoctar' element={<InfoDoctar/>}/>
-          {/* <Route path={ALBUM} element={<MainComponent/>}/> */}
+          {/* <Route path='/infodoctar' element={<DoctorDetailPage/>}/> */}
+          <Route path={ALBUM} element={<ImageGallery/>}/>
           <Route path={SING_IN} element={
             <AppContainer>
               <AccountBox />
