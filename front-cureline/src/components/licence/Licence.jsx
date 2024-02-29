@@ -12,7 +12,6 @@ const Licence = () => {
         marginLeft: 'auto',
         marginRight: 'auto',
         boxSizing: 'border-box',
-        paddingRight: '50px',
         backgroundColor: 'white',
 
         display: 'flex',

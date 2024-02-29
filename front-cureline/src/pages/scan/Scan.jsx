@@ -7,7 +7,7 @@ import './Scan.scss'
 const Scan = () => {
   return (
     <div>
-     <h1  className="mb-5" style={{textAlign: 'center', fontSize:'36px', paddingTop:'20px'}}>Сканер</h1>
+     <h1  className="mb-5" style={{textAlign: 'center', fontSize:'36px', paddingTop:'120px'}}>Сканер</h1>
       <div style={{ margin: "18px 50px", display: 'flex', justifyContent: "center" }}>
         <div className="card" >
           <div className="image-data">

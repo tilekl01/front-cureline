@@ -5,7 +5,7 @@ import '../contact/Contact.css'
 const Contact = () => {
   return (
     <div>
-		<h1 className='contact' style={{paddingTop:'30px'}}>Контакты</h1>
+		<h1 className='contact' style={{marginTop:'120px'}}>Контакты</h1>
         <section className="contact-us section" >
 			<div className="container">
 				<div className="inner">

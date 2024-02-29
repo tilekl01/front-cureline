@@ -54,7 +54,7 @@ const Header = () => {
                             <div className="row">
                                 <div className="col-lg-3 col-md-3 col-12" >
                                     <div className="logo">
-                                        <a href="/"><img style={{borderRadius: '50px'}} src={LOGO} alt="#"  /></a>
+                                        <a href="/"><img style={{borderRadius: '50px', paddingBottom:'5px'}} src={LOGO} alt="#"  /></a>
                                     </div>
                                     <div className="mobile-nav">
                                         <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -94,9 +94,7 @@ const Header = () => {
                                         <nav className="navigation">
                                             <ul className="nav menu">
                                                 <li ><a href="/">Главная<i className="icofont-rounded-down"></i></a>
-                                                    <ul className="dropdown">
-                                                    <li><a href="/album">Галерея</a></li>
-                                                    </ul>
+                                                  
                                                 </li>
                                                 <li><a href="/doctar">Докторы </a></li>
                                                 {/* <li><a href="#">Услуги </a></li> */}
@@ -104,8 +102,6 @@ const Header = () => {
                                                     <ul className="dropdown">
                                                         <li><a href="/scan">Сканер</a></li>
                                                         <li><a href="/licence">Лицензия</a></li>
-                                                        <li><a href="/doctar">Докторы</a></li>
-                                                        <li><a href="/faq">FAQ</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="/album">Галерея</a></li>

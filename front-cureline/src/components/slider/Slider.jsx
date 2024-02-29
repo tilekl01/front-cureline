@@ -40,10 +40,9 @@ const Slider = () => {
             <AboutUs/>
             <Scan/>
             <section className="max-w-xl mx-auto py-20 px-4">
-        <h1 className="text-center uppercase tracking-widest font-bold mb-8">
-          Challenge Faqs
+        <h1 className="text-center uppercase tracking-widest font-bold mb-8" style={{fontSize:'26px'}}>
+        Вопросы и ответы
         </h1>
-
         <section className="grid grid-cols-1 gap-8">
           {cards.map((card, index) => (
             <SingleQuestion {...card} key={index} />
