@@ -77,6 +77,7 @@ const Header = () => {
                                                     <li><a href="/">О нас</a></li>
                                                     <li><a href="/contact">Контакт</a></li>
                                                     <li><a href="/faq">FAQ</a></li>
+                                                    <li><a href="/clients">Отзывы</a></li>
                                                     <div className="col-lg-2 col-12 login" >
                                     <div className="registration-icon">
                                         <i className="fa fa-user"></i>
@@ -110,6 +111,7 @@ const Header = () => {
                                                 <li><a href="/album">Галерея</a></li>
                                                 <li><a href="/contact">Контакт</a></li>
                                                 <li><a href="/faq">FAQ</a></li>
+                                                <li><a href="/clients">Отзывы</a></li>
                                             </ul>
                                         </nav>
                                     </div>

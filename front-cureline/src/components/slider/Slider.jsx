@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { questions } from "../faq/questions";
 import SingleQuestion from "../faq/Faq";
 import AboutUs from '../aboutus/AboutUs';
+import Testimonial from '../Clients/ClientSlider';
 
 
 const Slider = () => {
@@ -51,6 +52,7 @@ const Slider = () => {
       </section>
             <Doctars/>
             <Licence/>
+            <Testimonial/>
       <Contact/>
         </div>
     )
