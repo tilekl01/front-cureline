@@ -11,13 +11,7 @@
   h1 {
     margin-bottom: 1.5rem;
   }
-  
-  .images-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
+
   
   .images-list div {
     width: calc(100% - 2rem); /* 33.33% of parent width minus gap */

@@ -7,8 +7,7 @@ const Licence = () => {
 
   const styles = {
         width: '450px',
-        height: '650px',
-        padding: '1rem',
+        height: '550px',
         display: 'block',
         marginLeft: 'auto',
         marginRight: 'auto',
@@ -39,7 +38,7 @@ const Licence = () => {
 
         <div className='main'>
 
-    <h1  className="mb-5"     >Лицензия</h1>
+    <h1  className="mb-5" style={{fontSize: "36px"}}    >Лицензия</h1>
   
     <div className='flex-container images-list' style={{ display: '-webkit-inline-box', textAlign: 'center' }}>
        <div>

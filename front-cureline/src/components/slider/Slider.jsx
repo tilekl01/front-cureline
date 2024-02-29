@@ -1,27 +1,32 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Schedule from '../schedule/Schedule';
 import Scan from '../../pages/scan/Scan';
 import Doctars from '../doctars/Doctars';
 import Contact from '../../pages/contact/Contact';
 import Licence from '../licence/Licence';
 import { useTranslation } from 'react-i18next';
+import { questions } from "../faq/questions";
+import SingleQuestion from "../faq/Faq";
+import AboutUs from '../aboutus/AboutUs';
+
 
 const Slider = () => {
     const {t} = useTranslation()
+    const [cards] = useState(questions);
     return (
         <div>
-            <section class="slider">
-                <div class="hero-slider" >
-                    <div class="single-slider">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="text">
+            <section className="slider">
+                <div className="hero-slider" >
+                    <div className="single-slider">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-7">
+                                    <div className="text">
                                         <h1>БОЛЕЕ  <span>ТЫСЯЧИ</span> ГЕНЕТИЧЕСКИХ <span>ТЕСТОВ</span></h1>
-                                        <p>{t("title_banner")}</p>
-                                        <div class="button">
-                                            <a href="#" class="btn">Записаться</a>
-                                            <a href="#" class="btn primary">ещё</a>
+                                        <p style={{fontSize:'19px'}}>{t("title_banner")}</p>
+                                        <div className="button">
+                                            <a href="#" className="btn">Записаться</a>
+                                            {/* <a href="#" className="btn primary">ещё</a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -31,7 +36,19 @@ const Slider = () => {
                 </div>
             </section>
             <Schedule/>
+            <AboutUs/>
             <Scan/>
+            <section className="max-w-xl mx-auto py-20 px-4">
+        <h1 className="text-center uppercase tracking-widest font-bold mb-8">
+          Challenge Faqs
+        </h1>
+
+        <section className="grid grid-cols-1 gap-8">
+          {cards.map((card, index) => (
+            <SingleQuestion {...card} key={index} />
+          ))}
+        </section>
+      </section>
             <Doctars/>
             <Licence/>
       <Contact/>

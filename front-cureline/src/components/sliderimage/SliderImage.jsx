@@ -20,7 +20,7 @@ const Sliderimage = () => {
 
   return (
     <div className="App" style={{margin: '20px 20px'}}>
-        <h1 className="mb-5" style={{textAlign: 'center'}}>ФОТОГАЛЕРЕЯ</h1>
+        <h1 className="mb-5" style={{textAlign: 'center',fontSize:'36px'}}>ФОТОГАЛЕРЕЯ</h1>
       <ImageGallery
         items={images}
         showPlayButton={false}

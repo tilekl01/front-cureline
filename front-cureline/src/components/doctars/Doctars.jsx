@@ -5,76 +5,45 @@ import Licence from '../licence/Licence'
 // import { MantineProvider } from '@mantine/core';
 const Doctars = () => {
   return (
-    <div> 
-      <h1 style={{display: 'flex', justifyContent: 'center', padding: '40px 20px'}}>Наши содрудники</h1>
-    <div class="card-container">
+    <div > 
+      <h4 style={{display: 'flex', justifyContent: 'center', padding: '40px 20px', fontSize:'36px'}}>Наши содрудники</h4>
+    <div className="card-container">
      
-  <div class="card_doctars">
-    <div class="card-content">
-      <a href='/infodoctar'>
-        <div class="name" >Жолдошев Омурбек Бахридинович</div>
-      </a>
-      <div class="title">Медицинский директор, рефракционный офтальмохирург, врач первой квалификационной категории, член ESCRS</div>
-      <a href="appointment_link" class="button_doc">Записаться</a>
-      
-    </div>
-    <img src="https://olc.kg/wp-content/uploads/2023/07/zholdoshev_500px.png" alt="Doctor"/>
-  </div>
-  <div class="card_doctars">
-    <div class="card-content">
+    <div className="card_doctars">
+    <div className="card-content">
     <a href='/infodoctar'>
-        <div class="name" >Жолдошев Омурбек Бахридинович</div>
+        <div className="name" >Жолдошев Омурбек Бахридинович</div>
       </a>
-      <div class="title">Медицинский директор, рефракционный офтальмохирург, врач первой квалификационной категории, член ESCRS</div>
-      <a href="appointment_link" class="button_doc">Записаться</a>
+      <div className="title">Медицинский директор, рефракционный офтальмохирург, врач первой квалификационной категории, член ESCRS</div>
+      <a href="appointment_link" className="button_doc">Записаться</a>
       
     </div>
     <img src="https://olc.kg/wp-content/uploads/2023/07/zholdoshev_500px.png" alt="Doctor"/>
   </div>
-  <div class="card_doctars">
-    <div class="card-content">
+  <div className="card_doctars">
+    <div className="card-content">
     <a href='/infodoctar'>
-        <div class="name" >Жолдошев Омурбек Бахридинович</div>
+        <div className="name" >Жолдошев Омурбек Бахридинович</div>
       </a>
-      <div class="title">Медицинский директор, рефракционный офтальмохирург, врач первой квалификационной категории, член ESCRS</div>
-      <a href="appointment_link" class="button_doc">Записаться</a>
+      <div className="title">Медицинский директор, рефракционный офтальмохирург, врач первой квалификационной категории, член ESCRS</div>
+      <a href="appointment_link" className="button_doc">Записаться</a>
       
     </div>
     <img src="https://olc.kg/wp-content/uploads/2023/07/zholdoshev_500px.png" alt="Doctor"/>
   </div>
-  <div class="card_doctars">
-    <div class="card-content">
+  <div className="card_doctars">
+    <div className="card-content">
     <a href='/infodoctar'>
-        <div class="name" >Жолдошев Омурбек Бахридинович</div>
+        <div className="name" >Жолдошев Омурбек Бахридинович</div>
       </a>
-      <div class="title">Медицинский директор, рефракционный офтальмохирург, врач первой квалификационной категории, член ESCRS</div>
-      <a href="appointment_link" class="button_doc">Записаться</a>
+      <div className="title">Медицинский директор, рефракционный офтальмохирург, врач первой квалификационной категории, член ESCRS</div>
+      <a href="appointment_link" className="button_doc">Записаться</a>
       
     </div>
     <img src="https://olc.kg/wp-content/uploads/2023/07/zholdoshev_500px.png" alt="Doctor"/>
   </div>
-  <div class="card_doctars">
-    <div class="card-content">
-    <a href='/infodoctar'>
-        <div class="name" >Жолдошев Омурбек Бахридинович</div>
-      </a>
-      <div class="title">Медицинский директор, рефракционный офтальмохирург, врач первой квалификационной категории, член ESCRS</div>
-      <a href="appointment_link" class="button_doc">Записаться</a>
-      
-    </div>
-    <img src="https://olc.kg/wp-content/uploads/2023/07/zholdoshev_500px.png" alt="Doctor"/>
-  </div>
-  <div class="card_doctars">
-    <div class="card-content">
-    <a href='/infodoctar'>
-        <div class="name" >Жолдошев Омурбек Бахридинович</div>
-      </a>
-      <div class="title">Медицинский директор, рефракционный офтальмохирург, врач первой квалификационной категории, член ESCRS</div>
-      <a href="appointment_link" class="button_doc">Записаться</a>
-      
-    </div>
-    <img src="https://olc.kg/wp-content/uploads/2023/07/zholdoshev_500px.png" alt="Doctor"/>
-  </div>
+
+
 </div>
 {/* <MantineProvider>
   <FaqSimple/>
