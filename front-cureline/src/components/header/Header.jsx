@@ -94,7 +94,6 @@ const Header = () => {
                                         <nav className="navigation">
                                             <ul className="nav menu">
                                                 <li ><a href="/">Главная<i className="icofont-rounded-down"></i></a>
-                                                  
                                                 </li>
                                                 <li><a href="/doctar">Докторы </a></li>
                                                 {/* <li><a href="#">Услуги </a></li> */}

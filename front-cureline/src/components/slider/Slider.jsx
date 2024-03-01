@@ -19,16 +19,16 @@ const Slider = () => {
             <section className="slider">
                 <div className="hero-slider" >
                     <div className="single-slider">
-                        <div className="container">
-                            <div className="row">
+                        <div className="container"  >
+                            <div className="row" style={{display:'flex',textAlign: 'center', justifyContent:'center'}}>
                                 <div className="col-lg-7">
-                                    <div className="text">
+                                    <div className="text" >
                                         <h1>БОЛЕЕ  <span>ТЫСЯЧИ</span> ГЕНЕТИЧЕСКИХ <span>ТЕСТОВ</span></h1>
                                         <p style={{fontSize:'19px'}}>{t("title_banner")}</p>
-                                        <div className="button">
+                                        {/* <div className="button">
                                             <a href="#" className="btn">Записаться</a>
-                                            {/* <a href="#" className="btn primary">ещё</a> */}
-                                        </div>
+                                            <a href="#" className="btn primary">ещё</a>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

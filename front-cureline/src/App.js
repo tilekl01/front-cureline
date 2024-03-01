@@ -17,6 +17,8 @@ import Licence from './components/licence/Licence';
 import ImageGallery from './components/sliderimage/SliderImage';
 import SingleQuestion from './components/faq/Faq';
 import Testimonial from './components/Clients/ClientSlider';
+import { WhatsAppWidget } from 'react-whatsapp-widget';
+import 'react-whatsapp-widget/dist/index.css';
 const AppContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -26,10 +28,17 @@ const AppContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
+const Whatsapp = styled.div`
+margin-bottom: 100px;
+`;
+
+
 
 function App() {
   const [cards] = useState(questions);
-
+  const handleTelegramResponse = response => {
+    console.log(response);
+  };
   return (
     <div className="App" >
 
@@ -67,8 +76,10 @@ function App() {
           <Route path='/scan' element={<Scan/>}/>
         </Routes>
       </BrowserRouter>
-
       <Footer />
+      <Whatsapp >
+        <WhatsAppWidget phoneNumber="996998555990"/>  
+      </Whatsapp>
     </div>
   );
 }

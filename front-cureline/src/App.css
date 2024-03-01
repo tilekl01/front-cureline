@@ -548,6 +548,9 @@ End Header CSS
 Start Hero Area CSS
 =============================*/
 .slider .single-slider {
+display: flex;
+align-items: center;
+padding-bottom: 200px;
 height: 600px;
 background-size: cover;
 background-position: center;
