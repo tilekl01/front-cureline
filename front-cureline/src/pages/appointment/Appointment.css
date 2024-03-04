@@ -1,0 +1,47 @@
+.callback-form {
+    width: 300px;
+    padding: 20px;
+    display: flow;
+    align-items: center;
+
+  }
+  .callback-form h2 {
+    margin-top: 0;
+  }
+  .title_sub{
+    font-size: 26px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .callbacksub{
+    padding: 10px 0;
+  }
+  .callback-form input[type="text"],
+  .callback-form input[type="tel"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .callback-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+  }
+  .callback-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .callback-form .privacy-policy {
+    font-size: 0.8rem;
+    color: #666;
+  }

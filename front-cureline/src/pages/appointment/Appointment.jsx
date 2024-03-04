@@ -1,76 +1,19 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import './Appointment.css'
 const AppointmentForm = () => {
-  const [name, setName] = useState('');
-  const [time, setTime] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [serviceType, setServiceType] = useState('');
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:3000/adminpanel', {
-        name,
-        time,
-        phoneNumber,
-        serviceType
-      });
-      console.log('Ответ сервера:', response.data);
-      // Очистка полей формы после успешной отправки
-      setName('');
-      setTime('');
-      setPhoneNumber('');
-      setServiceType('');
-    } catch (error) {
-      console.error('Ошибка отправки данных на админ панель:', error);
-    }
-  };
-
+ 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Имя:</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="time">Время:</label>
-        <input
-          type="text"
-          id="time"
-          value={time}
-          onChange={(event) => setTime(event.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="phoneNumber">Номер телефона:</label>
-        <input
-          type="tel"
-          id="phoneNumber"
-          value={phoneNumber}
-          onChange={(event) => setPhoneNumber(event.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="serviceType">Вид услуги:</label>
-        <input
-          type="text"
-          id="serviceType"
-          value={serviceType}
-          onChange={(event) => setServiceType(event.target.value)}
-          required
-        />
-      </div>
-      <button type="submit">Отправить</button>
-    </form>
+<div class="callback-form">
+  <h2>Обратный звонок</h2>
+  <p>Представьтесь, мы вам перезвоним.</p>
+  <form action="/submit-callback" method="post"/>
+    <input type="text" name="name" placeholder="Ваше имя: *" required/>
+    <input type="tel" name="phone" placeholder="Телефон: *" required/>
+    <input type="submit" value="Отправить"/>
+    <p class="privacy-policy">Продолжая, вы соглашаетесь с политикой конфиденциальности</p>
+  
+</div>
   );
 };
 

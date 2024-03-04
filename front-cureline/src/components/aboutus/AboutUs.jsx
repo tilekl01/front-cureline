@@ -1,19 +1,38 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "./AboutUs.css";
 import "../../App.css";
 import "../../normalize.css";
 import "../../responsive.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-const AboutUs = () => {
-    return (
+import axios from 'axios';
 
+const AboutUs = () => {
+    const [aboutUs, setAboutUs] = useState(null);
+
+    useEffect(() => {
+      axios.get('http://salymbekov.pythonanywhere.com/api/about_us')
+        .then(response => {
+          setAboutUs(response.data);
+        })
+        .catch(error => {
+          console.error('Ошибка при получении данных about_us:', error);
+        });
+    }, []);
+  
+    if (!aboutUs) {
+      return <div>Loading...</div>;
+    }
+  
+
+    return (
+        
             <section className="why-choose section" >
-            <div className="container">
+            <div className="container"  >
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="section-title">
-                            <h2>Добро пожаловать в мир точной диагностики и заботы о вашем здоровье с DocLab Pathological Laboratory!</h2>
-                            <p>Мы - международная лаборатория, стремящаяся к высшему качеству диагностики и исследований в области патологии.</p>
+                            <h2>{aboutUs.title}</h2>
+                            <p>{aboutUs.description}</p>
                         </div>
                     </div>
                 </div>
@@ -38,6 +57,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+            
         </section>
 
     )
