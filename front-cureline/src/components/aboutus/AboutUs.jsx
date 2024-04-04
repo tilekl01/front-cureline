@@ -10,7 +10,7 @@ const AboutUs = () => {
     const [aboutUs, setAboutUs] = useState(null);
 
     useEffect(() => {
-      axios.get('http://salymbekov.pythonanywhere.com/api/about_us')
+      axios.get('')
         .then(response => {
           setAboutUs(response.data);
         })
@@ -22,8 +22,9 @@ const AboutUs = () => {
     if (!aboutUs) {
       return <div>Loading...</div>;
     }
-  
 
+
+    
     return (
         
             <section className="why-choose section" >
