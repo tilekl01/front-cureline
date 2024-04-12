@@ -36,9 +36,7 @@ margin-bottom: 100px;
 
 function App() {
   const [cards] = useState(questions);
-  const handleTelegramResponse = response => {
-    console.log(response);
-  };
+
 
   return (
     <div className="App" >

@@ -5,6 +5,7 @@ import "../../normalize.css";
 import "../../responsive.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const AboutUs = () => {
+
     return (
 
             <section class="why-choose section" >
