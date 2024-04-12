@@ -12,7 +12,7 @@ const AboutUs = () => {
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title">
-                            <h2>Добро пожаловать в мир точной диагностики и заботы о вашем здоровье с DocLab Pathological Laboratory!</h2>
+                            <h2>Добро пожаловать в  мир точной диагностики и заботы о вашем здоровье с DocLab Pathological Laboratory!</h2>
                             <p>Мы - международная лаборатория, стремящаяся к высшему качеству диагностики и исследований в области патологии.</p>
                         </div>
                     </div>
